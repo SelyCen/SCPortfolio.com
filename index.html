@@ -79,7 +79,12 @@
 function downloadFile(buttonId, fileUrl, fileName) {
     const button = document.getElementById(buttonId);
 
-    if (!button) {
+     if (button) {
+        button.addEventListener('click', function() {
+            alert('Button was tapped!');
+        });
+    
+    else (!button) {
       console.error(`Button with ID '${buttonId}' not found.`);
       return;
     }
