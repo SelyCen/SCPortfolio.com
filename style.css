@@ -344,7 +344,6 @@ footer a i:hover {
 
     .menu-icon {
         display: block;
-
         animation: showFade 1s forwards;
         animation-delay: 1s;
         opacity: 0;
@@ -365,6 +364,44 @@ footer a i:hover {
     #menu-toggle:checked + .menu-icon .bx-x {
         display: block;
     }
+
+    .list-menu {
+        background: rgb(255, 255, 255, 0.7);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding: 0 25px;
+        width: 100%;
+        flex-direction: column;
+        height: 0px;
+        border-radius: 0 0 30px 30px;
+        box-shadow: 0 20px 20px rgb(0, 0, 0, 0.1);
+        backdrop-filter: blur(25px);
+        overflow: hidden;
+        transition: 0.5s ease;
+    }
+
+    .list-menu ul li a {
+        background: none;
+        color: rgb(134, 134, 134);
+    }
+
+    .list-menu li ul.dropdown li{
+        background: none;
+        width: 100px;
+        top: -40px;
+        left: 100px;
+    }
+
+    .list-menu li:hover ul.dropdown{
+        display: flex;
+        }
+
+    #menu-toggle:checked ~ .list-menu {
+        height: 220px;
+        padding: 25px;
+    }
+
 
     .list-menu {
         background: rgb(255, 255, 255, 0.7);
