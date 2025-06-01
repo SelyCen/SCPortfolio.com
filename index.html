@@ -24,10 +24,15 @@
         <!-- END MOBILE SCREEN -->
 
         <ul class="list-menu">
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a class="active">Home</a></li>
+            <li><a href="about.html">About </a></li>
+            <li><a href="project.html">Project &#x25BE</a>
+            <ul class="dropdown">
+              <li><a href="GD.html">Design Graphic</a></li>
+              <li><a href="AD.html">Art Design</a></li>
+              <li><a href="SAE.html">Animation & Editing</a></li>
+             </ul></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </header>
 
@@ -38,7 +43,7 @@
             <h2 class="role-text">
                 <span>Design Graphic</span>
                 <span>Artistik Designer</span>
-                <span>Animation & Editing</span>
+                <span>Animator</span>
             </h2>
 
             <div class="list-button">
@@ -79,12 +84,7 @@
 function downloadFile(buttonId, fileUrl, fileName) {
     const button = document.getElementById(buttonId);
 
-     if (button) {
-        button.addEventListener('click', function() {
-            alert('Button was tapped!');
-        });
-    
-    else (!button) {
+    if (!button) {
       console.error(`Button with ID '${buttonId}' not found.`);
       return;
     }
@@ -100,7 +100,7 @@ function downloadFile(buttonId, fileUrl, fileName) {
   }
 
   // Example: Replace with your actual file URL and desired file name
-  downloadFile('downloadButton', 'Sely.pdf', 'downloaded_Sely.PDF');
+  downloadFile('downloadButton', 'Sely.PDF', 'downloaded_Sely.PDF');
 </script>
 </body>
 
