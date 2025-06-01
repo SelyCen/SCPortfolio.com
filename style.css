@@ -11,9 +11,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-x: hidden;
 }
 
+/* HEADER */
 header {
     /* background: yellow; */
     background: white;
@@ -402,26 +402,6 @@ footer a i:hover {
         padding: 25px;
     }
 
-    .list-menu {
-        background: rgb(255, 255, 255, 0.7);
-        position: absolute;
-        top: 80px;
-        left: 0;
-        padding: 0 25px;
-        width: 100%;
-        flex-direction: column;
-        height: 0px;
-        border-radius: 0 0 30px 30px;
-        box-shadow: 0 20px 20px rgb(0, 0, 0, 0.1);
-        backdrop-filter: blur(25px);
-        overflow: hidden;
-        transition: 0.5s ease;
-    }
-
-    #menu-toggle:checked ~ .list-menu {
-        height: 220px;
-        padding: 25px;
-    }
 
     main {
         flex-direction: column-reverse;
