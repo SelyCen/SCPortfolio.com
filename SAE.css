@@ -260,7 +260,7 @@ footer {
 
 ul.contact {
     position: relative;
-    top: -5px;
+    top: 0px;
     list-style: none;
     display:flex ;
     gap: 700px;
@@ -492,7 +492,7 @@ ul.contact {
 
     ul.contact {
         left: 0px;
-        top: 120px;
+        top: 100px;
         font-size: 10px;
         gap: 150px ;
      }
