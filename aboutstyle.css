@@ -23,7 +23,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
-    z-index: 3;
+    z-index: 1;
 }
 
 .logo {
@@ -53,6 +53,8 @@ header {
 
 .list-menu li ul.dropdown li {
     position: relative;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
     width: 200px;
     text-align: center;
     left: -70px;
