@@ -120,6 +120,12 @@ header {
     width: 1280px;
 }
 
+.a{
+    animation: showUp 0.7s forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+
 .J1 {
     position:relative;
     top: 240px;
@@ -128,6 +134,9 @@ header {
     font-family: "Jua", sans-serif;
     font-weight: 400;
     font-style: normal;
+    animation: showUp 0.7s forwards;
+    animation-delay: 1.4s;
+    opacity: 0;
 }
 
 .J2 {
@@ -140,6 +149,9 @@ header {
     font-weight: 500;
     font-style: normal;
     color: #FFB61D;
+    animation: showUp1 0.7s forwards;
+    animation-delay: 1.4s;
+    opacity: 0;
 }
 
 .ci1 {
@@ -151,6 +163,9 @@ header {
     border-radius: 50%;
     outline: 3px solid black; 
     transform: rotate(-2deg);
+    animation: showUp2 0.7s forwards;
+    animation-delay: 1.4s;
+    opacity: 0;
 }
 
 .ci2{
@@ -162,6 +177,9 @@ header {
     border-radius: 50%;
     outline: 3px solid black; 
     transform: rotate(7deg);
+    animation: showUp3 0.7s forwards;
+    animation-delay: 1.4s;
+    opacity: 0;
 }
 
 
@@ -170,6 +188,7 @@ header {
     width:364px;
     top: -668px;
     left: 420px;
+    
 }
 
 .a2 {
@@ -207,6 +226,9 @@ header {
     top: 90px;
     left: 950px;
     font-size: 40px;
+    animation: fade-in-up;
+    animation-timeline: view() ;
+    animation-range: entry 0 cover 40%;
 }
 
 .t1{
@@ -216,6 +238,9 @@ header {
     left: 985px;
     font-weight: 300px;
     font-size: 25px;
+    animation: fade-in-up;
+    animation-timeline: view() ;
+    animation-range: entry 0 cover 40%;
 }
 
 
@@ -224,6 +249,9 @@ header {
     left: 40px;
     top: 0px;
     width:420px;
+    animation: fade-in-up;
+    animation-timeline: view() ;
+    animation-range: entry 0 cover 40%;
 }
 
 .CD2 {
@@ -231,6 +259,9 @@ header {
     left: -60px;
     top: 0px;
     width: 420px;
+    animation: fade-in-up;
+    animation-timeline: view() ;
+    animation-range: entry 0 cover 40%;
 
 }
 
@@ -239,6 +270,9 @@ header {
     left: -100px;
     top: 0px;
     width: 420px;
+    animation: fade-in-up;
+    animation-timeline: view() ;
+    animation-range: entry 0 cover 40%;
 }
 
 
@@ -257,6 +291,9 @@ header {
     left: 52px;
     font-size: 50px;
     color: #868686;
+    animation: fade-in-up;
+    animation-timeline: view() ;
+    animation-range: entry 0 cover 40%;
 }
 
 .t2{
@@ -269,6 +306,9 @@ header {
     font-weight: 300px;
     font-size: 20px;
     color: #B3B3B3;
+    animation: fade-in-up;
+    animation-timeline: view() ;
+    animation-range: entry 0 cover 40%;
 }
 
 
@@ -277,6 +317,9 @@ header {
     top: -100px;
     left: 55px;
     width:550px;
+    animation: fade-in-up;
+    animation-timeline: view() ;
+    animation-range: entry 0 cover 40%;
 }
 
 .TA2 {
@@ -284,6 +327,9 @@ header {
     top: -100px;
     left: 105px;
     width: 550px;
+    animation: fade-in-up;
+    animation-timeline: view() ;
+    animation-range: entry 0 cover 40%;
 }
 
 .TA3{
@@ -291,6 +337,9 @@ header {
     top: -60px;
     left: 655px;
     width: 550px;
+    animation: fade-in-up;
+    animation-timeline: view() ;
+    animation-range: entry 0 cover 40%;
 }
 footer {
     position: relative;
@@ -329,6 +378,27 @@ ul.contact {
     to {
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+
+@keyframes showUp1 {
+    to {
+        opacity: 1;
+        transform: translateY(-5deg);
+    }
+}
+
+@keyframes showUp2 {
+    to {
+        opacity: 1;
+        transform: translateY(-2deg);
+    }
+}
+
+@keyframes showUp3 {
+    to {
+        opacity: 1;
+        transform: translateY(7deg);
     }
 }
 
