@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-x: hidden;
+    overflow-x:hidden;
 }
 
 header {
@@ -188,7 +188,9 @@ header {
     width:364px;
     top: -668px;
     left: 420px;
-    
+    animation: showUp 0.7s forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
 }
 
 .a2 {
@@ -196,6 +198,9 @@ header {
     width:400px;
     top: -900px;
     left: 450px;
+    animation: showUp 0.7s forwards;
+    animation-delay: 1.6s;
+    opacity: 0;
 }
 
 .a3{
@@ -203,6 +208,9 @@ header {
     width:213px;
     top: -670px;
     left: 47px;
+    animation: showUp 0.7s forwards;
+    animation-delay: 1.7s;
+    opacity: 0;
 }
 
 .a4 {
@@ -210,6 +218,9 @@ header {
     width:150px;
     top:-670px;
     left: 77px;
+    animation: showUp 0.7s forwards;
+    animation-delay: 1.8s;
+    opacity: 0;
 }
 
 .page2{
@@ -359,7 +370,7 @@ ul.contact {
     gap: 700px;
     animation: fade-in-up;
     animation-timeline: view() ;
-    animation-range: entry 0 cover 5%;
+    animation-range: entry 0 cover 0%;
  }
 
 
@@ -454,9 +465,19 @@ ul.contact {
     display: none;
 }
 /* RESPONSIVE */
+/* RESPONSIVE */
 @media screen and (max-width: 768px) {
     header {
         padding: 0 25px;
+    }
+    
+    body {
+        overflow: hidden;
+    }
+    
+    html {
+        overflow-x: hidden;
+        overflow-y: visible;
     }
 
     .menu-icon {
@@ -505,9 +526,10 @@ ul.contact {
 
     .list-menu li ul.dropdown li{
         background: none;
-        width: 100px;
+        width: 90px;
         top: -40px;
-        left: 100px;
+        left: 75px;
+        padding: 0px 4px;
     }
 
     .list-menu li:hover ul.dropdown{
@@ -515,10 +537,9 @@ ul.contact {
         }
 
     #menu-toggle:checked ~ .list-menu {
-        height: 220px;
+        height: 180px;
         padding: 25px;
     }
-
 
     main {
         flex-direction: column-reverse;
@@ -528,8 +549,173 @@ ul.contact {
         padding-top: 80px;
     }
 
-    footer {
-        padding: 30px 25px;
+    .page1{
+        height: 900px;
     }
+
+    .J1 {
+        top: 90px;
+        left: 550px;
+    }
+
+    .J2 {
+        top: -30px;
+        left: 540px;
+    }
+
+    .ci1 {
+        top: -200px;
+        left: 480px;
+    }
+
+    .ci2 {
+        top: -500px;
+        left: 470px;
+    }
+
+    .a1 {
+        width: 300px;
+        top: -460px;
+        left: 490px;
+    }
+
+    .a2 {
+        width: 300px;
+        top: -340px;
+        left: 186px;
+    }
+
+    .a3 {
+        width: 163px;
+        top: -155px;
+        left: -118px;
+    }
+
+    .a4 {
+        width: 115px;
+        top: -155px;
+        left: -100px;
+    }
+
+    .page2{
+        height: 900px;
+    }
+
+    .tj1{
+        font-size: 30px;
+        left: 535px;
+        top: 100px;
+        animation: showUp 0.7s forwards;
+        animation-delay: 1.8s;
+        opacity: 0;
+    }
+
+    .t1{
+        font-size: 22px;
+        left: 535px;
+        top: 90px;
+        animation: showUp 0.7s forwards;
+        animation-delay: 1.8s;
+        opacity: 0;
+    }
+
+    .CD1{
+        width: 300px;
+        left: 510px;
+        top: 50px;
+        animation: showUp 0.7s forwards;
+        animation-delay: 1.8s;
+        opacity: 0;
+    }
+
+
+    .CD2{
+        width: 300px;
+        left: 170px;
+        top: 300px;
+        animation: showUp 0.7s forwards;
+        animation-delay: 1.8s;
+        opacity: 0;
+    }
+    
+    .CD3{
+        width: 300px;
+        left: -140px;
+        top: 550px;
+        animation: showUp 0.7s forwards;
+        animation-delay: 1.8s;
+        opacity: 0;
+    }
+
+    .page3{
+        height: 850px;
+    }
+
+    .tj2{
+        font-size: 30px;
+        left: 480px;
+        top: 100px;
+        animation: showUp 0.7s forwards;
+        animation-delay: 1.8s;
+        opacity: 0;
+    }
+
+    .t2{
+        font-size: 20px;
+        left: 480px;
+        top: 100px;
+        width: 320px;
+        animation: showUp 0.7s forwards;
+        animation-delay: 1.8s;
+        opacity: 0;
+    }
+    
+    .TA1 {
+        width: 300px;
+        left: 490px;
+        top: 150px;
+        animation: showUp 0.7s forwards;
+        animation-delay: 1.8s;
+        opacity: 0;
+    }
+
+    
+    .TA2 {
+        width: 300px;
+        left: 186px;
+        top: 300px;
+        animation: showUp 0.7s forwards;
+        animation-delay: 1.8s;
+        opacity: 0;
+    }
+
+    
+    .TA3 {
+        width: 300px;
+        left: -117px;
+        top: 450px;
+        animation: showUp 0.7s forwards;
+        animation-delay: 1.8s;
+        opacity: 0;
+    }
+
+    footer {
+        height: 30px;
+        padding: 10px 0px;
+        background-color: white;
+
+    }
+
+    ul.contact {
+        left: 470px;
+        top: 0px;
+        font-size: 10px;
+        gap: 80px ;
+        color: #868686;
+        z-index: 1;
+        animation: showUp 0.7s forwards;
+        animation-delay: 1.9s;
+        opacity: 0;
+     }
 }
 /* END RESPONSIVE */
