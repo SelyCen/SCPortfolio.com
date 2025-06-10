@@ -118,7 +118,7 @@ header {
 .t {
     position: relative;
     color: #868686;
-    top: 100px;
+    top: 140px;
     left: 155px;
     font-size: 30px;
     width: 200px;
@@ -149,7 +149,7 @@ header {
     position: relative;
     width: 280px;
     left: -310px;
-    top: 175px;
+    top: 215px;
     z-index: 1;
 }
 
@@ -164,7 +164,7 @@ header {
     position: relative;
     width: 280px;
     left: 80px;
-    top: -13px;
+    top: 27px;
 }
 
 .AD:hover {
@@ -177,7 +177,7 @@ header {
     position: relative;
     width: 360px;
     left: 455px;
-    top: -210px;
+    top: -170px;
     animation: showUp 0.7s forwards;
     animation-delay: 1.7s;
     opacity: 0; 
@@ -199,7 +199,7 @@ li:hover{
     color: #B3B3B3;
     font-weight: 700;
     font-size: 20px;
-    top: 235px;
+    top: 275px;
     left: -530px;
     text-decoration: none;
 }
@@ -209,7 +209,7 @@ li:hover{
     color: #B3B3B3;
     font-weight: 700;
     font-size: 20px;
-    top: 50px;
+    top: 90px;
     left: -120px;
     text-decoration: none;
 }
@@ -219,7 +219,7 @@ li:hover{
     color: #B3B3B3;
     font-weight: 700;
     font-size: 20px;
-    top: -190px;
+    top: -150px;
     left: 530px;
     text-decoration: none;
 }
@@ -299,9 +299,14 @@ li:hover{
     header {
         padding: 0 25px;
     }
-
+    
     body {
-        overflow: visible;
+        overflow: hidden;
+    }
+    
+    html {
+        overflow-x: hidden;
+        overflow-y: visible;
     }
 
     .menu-icon {
@@ -350,17 +355,19 @@ li:hover{
 
     .list-menu li ul.dropdown li{
         background: none;
-        width: 100px;
+        width: 90px;
         top: -40px;
-        left: 100px;
+        left: 75px;
+        padding: 0px 4px;
     }
 
     .list-menu li:hover ul.dropdown{
         display: flex;
+        gap: -20px;
         }
 
     #menu-toggle:checked ~ .list-menu {
-        height: 220px;
+        height: 180px;
         padding: 25px;
     }
 
@@ -376,57 +383,61 @@ li:hover{
 
     .t {
         font-size: 30px;
-        left: 140px;
+        left: 120px;
         top: 10px;
     }
 
     .GD {
         width: 300px;
-        left: 60px;
+        left: 30px;
         top: 50px;
+        
     }
 
     .AD {
         width: 300px;
-        left:60px;
+        left:30px;
         top: 130px;
+        animation: showUp 0.7s forwards;
+        animation-delay: 1.8s;
+        opacity: 0;
     }
 
     .AE{
-        animation: fade-in-up;
-        animation-timeline: view() ;
-        animation-range: entry 0 cover 10%;
+        animation: showUp 0.7s forwards;
+        animation-delay: 1.9s;
+        opacity: 0;
     }
 
     .video1 {
         width: 350px;
-        left:30px;
+        left:0px;
         top: 215px;
     }
 
 
     .J1{ 
         display: inline-block;
-        left: 130px;
+        left: 105px;
         top: 70px;
     }
 
     .J2{ 
         display: inline-block;
-        left: -150px;
-        top: 175px;
-        animation: fade-in-up;
-        animation-timeline: view() ;
-        animation-range: entry 0 cover 40%;
+        left: 130px;
+        top: 145px;
+        animation: showUp 0.7s forwards;
+        animation-delay: 1.8s;
+        opacity: 0;
     }
 
     .J3{ 
         display: inline-block;
-        left: 110px;
+        left: 80px;
         top: 210px;
-        animation: fade-in-up;
-        animation-timeline: view() ;
-        animation-range: entry 0 cover 10%;
+        animation: showUp 0.7s forwards;
+        animation-delay: 1.9s;
+        opacity: 0;
     }
 
 }
