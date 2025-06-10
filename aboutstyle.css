@@ -113,7 +113,7 @@ header {
 .left img {
     position: relative;
     width: 40%;
-    top: 78px;
+    padding: 80px 20px;
     animation: showUp 0.7s forwards;
     animation-delay: 1.6s;
     opacity: 0;
@@ -186,7 +186,7 @@ header {
     font-weight: 600;
     animation: fade-in-up;
     animation-timeline: view() ;
-    animation-range: entry 0 cover 100%;
+    animation-range: entry 0 cover 80%;
 }
 
 .PG {
@@ -253,7 +253,7 @@ header {
     z-index: 2;
     animation: fade-in-up;
     animation-timeline: view() ;
-    animation-range: entry 0 cover 40%;
+    animation-range: entry 0 cover 20%;
 }
 
 .me {
@@ -264,7 +264,7 @@ header {
     z-index: 1;
     animation: fade-in-up;
     animation-timeline: view() ;
-    animation-range: entry 0 cover 40%;
+    animation-range: entry 0 cover 20%;
 }
 
 .rectangle {
@@ -277,7 +277,7 @@ header {
     border-radius: 16px;
     animation: fade-in-up;
     animation-timeline: view() ;
-    animation-range: entry 0 cover 40%;
+    animation-range: entry 0 cover 20%;
 }
 
 .page3 {
@@ -301,7 +301,7 @@ header {
 .s1 ,.s2,.s3,.s4,.s5,.s6,.s7{
     animation: fade-in-up;
     animation-timeline: view() ;
-    animation-range: entry 0 cover 40%;
+    animation-range: entry 0 cover 20%;
 }
 
 .s1 {
@@ -475,6 +475,15 @@ ul.contact {
     header {
         padding: 0 25px;
     }
+    
+    body {
+        overflow-y: hidden;
+    }
+    
+    html {
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
 
     .menu-icon {
         display: block;
@@ -522,17 +531,19 @@ ul.contact {
 
     .list-menu li ul.dropdown li{
         background: none;
-        width: 100px;
+        width: 90px;
         top: -40px;
-        left: 100px;
+        left: 75px;
+        padding: 0px 4px;
     }
 
     .list-menu li:hover ul.dropdown{
         display: flex;
+        gap: -20px;
         }
 
     #menu-toggle:checked ~ .list-menu {
-        height: 220px;
+        height: 180px;
         padding: 25px;
     }
 
@@ -542,7 +553,7 @@ ul.contact {
         align-items: start;
         justify-content: space-evenly;
         padding: 0 25px;
-        padding-top: 80px;
+        padding-top: 0px;
     }
 
     .left img {
@@ -559,149 +570,199 @@ ul.contact {
     }
 
     .splash {
-        left: 130px;
+        left: 80px;
     }
 
     .right h2{
         text-align: center;
     }
 
-    .text2,.img,.contact {
-        animation: fade-in-up;
-        animation-timeline: view() ;
-        animation-range: entry 0 cover 40%;
+    .right .img{
+        left: 12px;
     }
-  
+
+    .right .contact{
+        font-size: 15px;
+        left: 7px;
+        padding: 0px 10px;
+    }
+
+    .right p{
+        font-size: 15px;
+    }
+    
     .page2 {
-        top: 300px;
-        height: 900px;
-        
+        top: 220px;
+        height: 980px;
     }
 
     .text3 {
         font-size: 20px;
-        left: 150px;
+        left: 180px;
+        animation: showFade 1s forwards;
+        animation-delay: 1s;
+        opacity: 0;
     }
 
     .PG {
         top: -10px;
-        width: 100%;
-        left: 160px;
+        width: 40%;
+        left: 190px;
         font-size: 15px;
+        animation: showFade 1s forwards;
+        animation-delay: 1s;
+        opacity: 0;
     }
 
     .text4 {
         font-size: 20px;
-        left: 150px;
+        left: 180px;
         top: -170px;
+        animation: showFade 1s forwards;
+        animation-delay: 1s;
+        opacity: 0;
     }
 
     .PGR {
-        width: 50%;
-        left: 160px;
+        width: 40%;
+        left: 190px;
         top: -180px;
         font-size: 15px;
+        animation: showFade 1s forwards;
+        animation-delay: 1s;
+        opacity: 0;
     }
 
     .me{
         width: 100px;
-        top: 400px;
-        left: 150px;
+        top: 435px;
+        left: 180px;
+        animation: showFade 1s forwards;
+        animation-delay: 1s;
+        opacity: 0;
     }
 
     .rectangle{
         width: 250px;
-        top: 325px;
-        left: 200px;
+        top: 365px;
+        left: 230px;
+        animation: showFade 1s forwards;
+        animation-delay: 1s;
+        opacity: 0;
     }
 
     .GTB {
         font-size: 15px;
-        top: 463px;
-        left: 240px;
+        top: 503px;
+        left: 270px;
+        animation: showFade 1s forwards;
+        animation-delay: 1s;
+        opacity: 0;
     }
 
     .page3 {
-        top: 300px;
+        top: 240px;
         width: 750px;
-        height: 300px ;
+        height: 560px ;
     }
 
     .TS {
         font-size: 30px;
-        left: 140px;
+        left: 170px;
+        animation: showFade 1s forwards;
+        animation-delay: 1.8s;
+        opacity: 0;
+    }
+
+    .s1, .s2, .s3, .s4, .s5, .s6, .s7{
+        animation: showFade 1s forwards;
+        animation-delay: 1.8s;
+        opacity: 0;
     }
 
     .s1 {
-        width: 80px;
-        left: 165px;
+        width: 60px;
+        left: 205px;
         top: 15px;
     }
 
     .s2 {
-        width: 95px;
-        left: 185px;
+        width: 75px;
+        left: 225px;
         top: 23px;
     }
 
     .s3 {
-        width: 90px;
-        left: 215px;
-        top: 8px;
+        width: 70px;
+        left: 245px;
+        top: 10px;
     }
 
     .s4 {
-        width: 85px;
-        left: 225px;
-        top: 15px;
+        width: 65px;
+        left: 265px;
+        top: 17px;
     }
 
     .s5 {
-        width: 70px;
-        left: -175px;
-        top: 160px;
+        width: 50px;
+        left: -35px;
+        top: 130px;
     }
 
     .s6 {
-        width: 70px;
-        left: -100px;
-        top: 160px;
+        width: 50px;
+        left: 10px;
+        top: 130px;
     }
 
     .s7 {
-        width: 70px;
-        left: -35px;
-        top: 160px;
+        width: 50px;
+        left: 55px;
+        top: 130px;
     }
 
     .n1 {
         width: 100px;
         text-align: center;
-        font-size: 15px;
-        left: 180px;
-        top: 10px;
-        gap: 50px;
+        font-size: 12px;
+        left: 217px;
+        top: 5px;
+        gap: 42px;
+        animation: showFade 1s forwards;
+        animation-delay: 1s;
+        opacity: 0;
     }
 
     .n2 {
         width: 100px;
         text-align: center;
-        font-size: 15px;
-        left: 210px;
-        top: 120px;
-        gap: 100px;
+        font-size: 12px;
+        left: 260px;
+        top: 90px;
+        gap: 66px;
+        animation: showFade 1s forwards;
+        animation-delay: 1s;
+        opacity: 0;
     }
 
     footer {
-        height: 28px;
-        top: 400px;
+        height: 30px;
+        padding: 48px 0px;
+        background-color: black;
+
     }
 
     ul.contact {
         left: 0px;
-        top: 420px;
+        top: 90px;
         font-size: 10px;
-        gap: 150px ;
+        gap: 80px ;
+        z-index: 1;
+        animation: showUp 0.7s forwards;
+        animation-delay: 1.8s;
+        opacity: 0;
+        color: white;
      }
 }
 /* END RESPONSIVE */
