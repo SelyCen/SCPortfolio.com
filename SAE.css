@@ -358,6 +358,15 @@ ul.contact {
     header {
         padding: 0 25px;
     }
+    
+    body {
+        overflow-y: hidden;
+    }
+    
+    html {
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
 
     .menu-icon {
         display: block;
@@ -405,9 +414,10 @@ ul.contact {
 
     .list-menu li ul.dropdown li{
         background: none;
-        width: 100px;
+        width: 90px;
         top: -40px;
-        left: 100px;
+        left: 75px;
+        padding: 0px 4px;
     }
 
     .list-menu li:hover ul.dropdown{
@@ -415,7 +425,7 @@ ul.contact {
         }
 
     #menu-toggle:checked ~ .list-menu {
-        height: 220px;
+        height: 180px;
         padding: 25px;
     }
 
@@ -428,32 +438,32 @@ ul.contact {
     }
 
     #video1 {
-        width: 250px;
-        top: 180px;
-        left: 250px;
+        width: 230px;
+        top: 160px;
+        left: 260px;
     }
 
     #Phone{
-        width: 230px;
-        top: -220px;
-        left: 550px;
+        width: 210px;
+        top: -190px;
+        left: 595px;
     }
 
     h4.text1 {
-        left: 420px;
-        top: -780px;
+        left: 430px;
+        top: -680px;
         font-size: 65px;
     }
 
     h4.text2 {
-        left: 430px;
-        top: -830px;
+        left: 440px;
+        top: -730px;
         font-size: 65px;
     }
 
     h4.text3 {
-        left: 530px;
-        top: -880px;
+        left: 550px;
+        top: -780px;
         font-size: 65px;
     }
 
@@ -463,38 +473,54 @@ ul.contact {
 
     .text4{
         left: 450px;
-        top: -250px;
+        top: -270px;
         font-size: 35px; 
+        animation: showUp 0.7s forwards;
+        animation-delay: 1.8s;
+        opacity: 0;
     }
 
     .text5{
         left: 450px;
-        top: -250px;
+        top: -270px;
         font-size: 10px; 
-        width: 400px;
+        width: 325px;
+        animation: showUp 0.7s forwards;
+        animation-delay: 1.8s;
+        opacity: 0;
     }
 
     .text6{
         left: 450px;
-        top: -220px;
+        top: -250px;
         font-size: 10px; 
+        animation: showUp 0.7s forwards;
+        animation-delay: 1.8s;
+        opacity: 0;
     }
 
     #video3 {
-        width: 400px;
-        top: 260px;
-        left: 390px;
+        width: 340px;
+        top: 250px;
+        left: 450px;
+        animation: showUp 0.7s forwards;
+        animation-delay: 1.8s;
+        opacity: 0;
     }
 
     footer {
-        height: 140px;
+        height: 30px;
+        padding: 70px 0px;
+        background-color: white;
+
     }
 
     ul.contact {
-        left: 10px;
-        top: 100px;
+        left: 0px;
+        top: 39px;
         font-size: 10px;
-        gap: 100px ;
+        gap: 80px ;
+        z-index: 1;
      }
 }
 /* END RESPONSIVE */
